@@ -75,6 +75,8 @@ Improve UI with colors or a GUI framework (e.g., Qt or NCurses)
 
 📷 Screenshots 
 Add screenshots or CLI output samples here if needed.
+![Screenshot 2025-04-11 191934](https://github.com/user-attachments/assets/6a9347c2-05f3-4a3f-b0be-8fbb2d7fdfd0)
+
 
 👨‍💻 Author
 Created by [SHRAVANI DABHOLE]
