@@ -1,5 +1,5 @@
 
-# 🧳 Tourist Management System
+ 🧳 Tourist Management System
 
 Welcome to the **Tourist Management System** — a C++ console application that simulates a travel agency's operations. It allows you to manage tours, book destinations, collect tourist details, and display special summer offers with a user-friendly CLI.
 
