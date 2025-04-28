@@ -1,114 +1,156 @@
-# TOURIST-MANAGEMENT-PROJECT-IN-CPP
-🧳 Tourist Management System (C++)
-📌 Overview
-The Tourist Management System is a simple C++ console-based application designed to manage and book tours for tourists. It includes basic functionalities such as adding tours, viewing available tours, booking tours, and managing tourist information.
 
-🛠 Features
-👤 Tourist login (username: tour, password: tour123)
+# 🧳 Tourist Management System
 
-➕ Add new tour packages
+Welcome to the **Tourist Management System** — a C++ console application that simulates a travel agency's operations. It allows you to manage tours, book destinations, collect tourist details, and display special summer offers with a user-friendly CLI.
 
-🔄 Update the number of tourists booked for a tour
+---
 
-📋 View all added tours with total cost calculation
+##  Features
 
-❌ Delete an existing tour
+✅ **Login System with Validation**
+- Username: exactly 5 lowercase letters  
+- Password: exactly 8 digits
 
-🗺️ View a list of available destination tours (with hotel info, duration, and available seats)
+✅ **Tour Management**
+- Add new tours  
+- Update existing bookings  
+- View all tours with total revenue  
+- Delete tours by ID
 
-📝 Book a tour from the list of available tours with tourist info
+✅ **Tourist Booking System**
+- Book from predefined tours  
+- Enter tourist info and confirm payment  
+- Automatic tour creation and data association
 
-💻 Technologies Used
-Language: C++
+✅ **Available Destinations**
+- View top Indian travel destinations with hotel and itinerary info
 
-Standard Libraries: iostream, string, vector
+✅ **Special Summer Offers**
+- Exclusive limited-time summer destinations with perks
 
-▶️ How to Run
-Compile the code:
+---
 
-Using g++ or any C++ compiler:
+## Technologies Used
 
+- **Language:** C++
+- **Standard Library:** `<iostream>`, `<vector>`, `<string>`, `<limits>`, `<algorithm>`
+
+---
+
+
+
+```bash
+g++ -o TouristSystem main.cpp
+▶️ Run
+bash
 Copy
 Edit
-g++ -o TouristManagement TouristManagement.cpp
-Run the executable:
+./TouristSystem
+🔐 Login Instructions
+You must log in before accessing the system.
 
+Username: 5 lowercase letters (e.g., admin)
+
+Password: 8-digit number (e.g., 12345678)
+
+ Menu Overview
+markdown
 Copy
 Edit
-./TouristManagement
-🔑 Login Credentials
-Use the following credentials to access the system:
+1. Add Tour
+2. Update Tour Bookings
+3. View Tours
+4. Delete Tour
+5. Available Tours
+6. Book an Available Tour
+7. Special Summer Offers
+8. Exit
+ Project Structure
+css
+Copy
+Edit
+├── main.cpp         # Main source code
+├── README.md        # GitHub project documentation
 
-Username: tour
+** Example Destinations Included**
+Varanasi
 
-Password: tour123
+Golden Temple (Amritsar)
 
-🧭 Menu Options
+Hampi
 
-Option	Function
-1	Add a new tour
-2	Update the number of bookings for a tour
-3	View all tours and their details
-4	Delete a tour by ID
-5	Display available destination tours
-6	Book a predefined available tour
-7	Exit the program
+Kedarnath
 
-📂 File Structure
-FILE.cpp — Main source file containing all classes and logic
+Taj Mahal
 
-README.md — Project overview and usage instructions (this file)
+Mysore
 
-📝 Notes
-The system uses in-memory storage (via vector<Tour>), so data is not persistent between runs.
+Ooty
 
-This is a basic prototype suitable for learning and educational purposes.
+Shimla
 
-📌 Future Enhancements
-Integrate file I/O or a database for persistent storage
+Delhi
 
-Add validation for age, phone number, and booking input
+Darjeeling
 
-Implement seat availability checks when booking
+Gateway of India
 
-Improve UI with colors or a GUI framework (e.g., Qt or NCurses)
+🎯 Future Improvements
+Save tour and booking data to files (persistence)
 
-📷 Screenshots 
-WELCOME :
-![Screenshot 2025-04-10 111520](https://github.com/user-attachments/assets/ddfcb4f7-c4a4-4426-8c2b-e0f9db64cdbc)
-LOGIN :
-![Screenshot 2025-04-10 111715](https://github.com/user-attachments/assets/8a496cbf-7fc9-4384-a041-786d3ae48d18)
+Improved date validation (with leap year logic)
+
+Admin panel with password encryption
+
+GUI version using Qt or SFML
+LOGIN WITH VALIDATION :
+
+![Screenshot 2025-04-28 112432](https://github.com/user-attachments/assets/7bca7fc1-75c5-4e98-8ab2-80e3dd8ddcda)
+
+WELCOME / CORRECT LOGIN :
+
+![Screenshot 2025-04-28 112526](https://github.com/user-attachments/assets/f516d3fa-edcd-434b-9f06-585231de095c)
+
+SHOW SPECIAL OFFERS :
+
+![Screenshot 2025-04-28 112553](https://github.com/user-attachments/assets/42ba8141-fe91-485c-8339-95263874342c)
+
+AVAILABLE TOURS :
+
+![Screenshot 2025-04-28 112831](https://github.com/user-attachments/assets/5ec38aec-8201-4aa0-9fbb-bccff70b7430)
+
+BOOK AVAILABLE TOUR :
+
+![Screenshot 2025-04-28 112851](https://github.com/user-attachments/assets/413b7b57-f1e8-4496-bdac-78501603fc6f)
+
+BOOKING WITH VALIDATION :
+
+![Screenshot 2025-04-28 113030](https://github.com/user-attachments/assets/3fe21bdb-7553-474e-bfbb-34833fa77cec)
+
 UPDATE TOUR :
-![Screenshot 2025-04-10 111840](https://github.com/user-attachments/assets/4d070944-ac43-4448-ab5f-a390027bbe53)
-VIEW TOUR :
-![Screenshot 2025-04-10 111949](https://github.com/user-attachments/assets/1f0c09ed-4fa7-4409-a774-46766a396331)
+
+![Screenshot 2025-04-28 113051](https://github.com/user-attachments/assets/c632227f-1bb2-4e8d-adc6-6a16423db10c)
+
+VIEW BOOKED TOUR :
+
+![Screenshot 2025-04-28 113123](https://github.com/user-attachments/assets/871c24a1-14fc-455a-83b8-00c515be1769)
+
+
+UPDATE TOUR :
+
+![Screenshot 2025-04-28 113139](https://github.com/user-attachments/assets/9029369c-8ecd-44f4-b166-7253f77e1dec)
+
+
 DELETE TOUR :
-![Screenshot 2025-04-10 112019](https://github.com/user-attachments/assets/c4a80966-ff3d-4420-8806-81500789013c)
-TOUR NOT FOUND :
-![Screenshot 2025-04-10 112039](https://github.com/user-attachments/assets/801f45cb-3836-435b-b34f-912a9c53ec0d)
-SEE AVAILABLE TOUR :
-![Screenshot 2025-04-10 113517](https://github.com/user-attachments/assets/3a1cf759-9d45-4bd9-91e8-207c21e08979)
 
-![Screenshot 2025-04-10 113538](https://github.com/user-attachments/assets/fb94eed9-a83a-4c10-b1ff-613c95f38d8e)
+![Screenshot 2025-04-28 113156](https://github.com/user-attachments/assets/f2f8773d-2454-4eb7-b33e-b78f790b3d59)
 
-![Screenshot 2025-04-10 113552](https://github.com/user-attachments/assets/5abf9a1f-64a4-4863-a2e7-58e0a943fcf6)
-BOOK AN AVAILABLE TOUR :
-![Screenshot 2025-04-10 113658](https://github.com/user-attachments/assets/e538a142-4308-420f-93a3-fc2fca948988)
-TO UPDATE BOOKING STATUS :
-![Screenshot 2025-04-10 113927](https://github.com/user-attachments/assets/2172791e-9ef0-40e2-b09d-27842aa0692f)
-SEE BOOKED TOUR :
-![Screenshot 2025-04-10 113942](https://github.com/user-attachments/assets/44eafab4-5bd0-4d13-84c6-68dfa1f58d5c)
-TO DELETE TOUR BOOKED FROM AVAILABLE TOUR :
-![Screenshot 2025-04-10 114002](https://github.com/user-attachments/assets/d912f558-16de-466e-953a-e524d5d48d40)
-Add ![Screenshot 2025-04-10 111914](https://github.com/user-attachments/assets/d7fcf4b1-2d66-4735-a507-20707a6b6283)
-screenshots or CLI output samples here if needed.
-![Screenshot 2025-04-11 191934](https://github.com/user-attachments/assets/6a9347c2-05f3-4a3f-b0be-8fbb2d7fdfd0)
 EXIT :
-![Screenshot 2025-04-10 114018](https://github.com/user-attachments/assets/a21b9a30-0422-4925-8457-1c29053a53b0)
+
+![Screenshot 2025-04-28 113212](https://github.com/user-attachments/assets/ffde7e73-ab3c-443a-9e3c-81b2ec2d8c67)
 
 
 
 
-👨‍💻 Author
-Created by [SHRAVANI DABHOLE]
-ENJOY THE TOURIST MANAGEMENT SYSTEM .....!!!
+ Author
+Developed by [Shravani Dilip Dabhole]
